@@ -35,7 +35,9 @@
 </div>
 
 <div class = "row1">
- <button type="button" onclick="confirmation()"> Download And Remove Unclaimed Codes</button> 
+<%= link_to "Download And Remove Unclaimed Codes", '/vendors/remove_codes', {:id => "upload" , :style => 'color:#000'} %>
+
+ <!-- <button type="button" onclick="confirmation()"> Download And Remove Unclaimed Codes</button>  -->
 
 </div>
 </div>
@@ -47,6 +49,8 @@
 <h4 class="history">History</h4>
 
 <center><%= link_to "Clear History", '/vendors/clear_history', {:id => "upload", :style => 'color:#000'} %></center>
+
+<!-- <center><button type="button" onclick="confirmation2()">Clear History</button></center> -->
 
 
 
@@ -87,7 +91,6 @@
       var data = google.visualization.arrayToDataTable([
         ["Element", "Quantity", { role: "style" } ],
         ["Uploaded", gon.codes["uploaded"], "#080dcc"],
-        //["Current Of Total Code = #Used Codes + #Unclaimed Codes ", gon.codes["total"], "#b87333"],
         ["Used", gon.codes["used"], "#c53711"],
         ["Unclaimed", gon.codes["unclaim"], "#0c9200"],
         ["Removed", gon.codes["removed"], "color: #000000"]
@@ -115,20 +118,33 @@
 
 
   function confirmation() {
-
-  if (gon.codes["unclaim"] == 0) {
-    alert("you have no unclaimed code to remove");
-  } 
-  else {
-    var answer = confirm("Do you want to remove " + gon.codes["unclaim"] + " unclaimed codes?")
-    unclaim = gon.codes["unclaim"]
-    if (answer){
-      window.location = "/vendors/remove_codes";
-      alert(unclaim + " unclaimed codes have been removed");
-      window.location = "/vendors/home";
+    if (gon.codes["unclaim"] == 0) {
+      alert("you have no unclaimed code to remove");
+    } 
+    else {
+      var answer = confirm("Do you want to remove " + gon.codes["unclaim"] + " unclaimed codes?")
+      unclaim = gon.codes["unclaim"]
+      if (answer){
+        window.location = "/vendors/remove_codes";
+        alert(unclaim + " unclaimed codes have been removed");
+        window.location = "/vendors/home";
+      }
     }
   }
-}
+
+
+  function confirmation2() {
+    if (gon.history == null) {
+      alert("You have no history");
+    } 
+    else {
+      var answer = confirm("All the histories will be removed\n\n\t     Are you sure?")
+      if (answer) {
+        window.location = "/vendors/clear_history"
+      }
+    }
+  }
+
   </script>
 
 </html>
