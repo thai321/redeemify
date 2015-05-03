@@ -29,6 +29,7 @@ $(document).ready(function(){
 <div class = "customer_home_numcode">
 <a class="r1">Your Provider Code: </a>
 <a style = "color:#1fb5fc">   <%= @current_code %></a>
+<br>
 <a class="r2">Total Offer Value: </a>
 <a style="color:#7bd215"> $<%= @total %></a>
 </div>
@@ -51,6 +52,7 @@ $(document).ready(function(){
 
   </div>
   </div>
+  <br>
 <% end %>
 
  <% @list_codes.each do |vendor, code| %>
