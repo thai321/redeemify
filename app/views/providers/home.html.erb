@@ -1,6 +1,6 @@
 
 
-<p class="account">Account from: <%= @provider.provider.upcase  %> | <%= @provider.name %> | <%= link_to "Log out", logout_path, :id => "logout" %></p>
+<p class="account">Login with: <%= @provider.provider.upcase  %> | Name: <%= @provider.name %> | <%= link_to "Log out", logout_path, :id => "logout" %></p>
 <div id="welcome">
 
     <h1> <%= image_tag('logo.png', :size => '400x100', :class => 'logo' ) %></h1>
@@ -27,11 +27,8 @@
 <div class = "row1">
 	 <%= link_to "Upload New Codes", '/providers/upload_page', {:id => "upload" , :style => 'color:#000'} %>
 </div>
-<div class = "row1">
-<!--  <%= link_to "Download And Remove Unclaimed Codes", '/providers/remove_codes', {:id => "remove-unclaimed-codes" , :style => 'color:#000'} %> -->
-
-  <button type="button" onclick="confirmation()"> Download And Remove Unclaimed Codes</button> 
-
+<div class = "button_confirm">
+ <form onclick="confirmation()" color = "#000" > Download And Remove Unclaimed Codes</form > 
 </div>
 
 </div>
@@ -42,7 +39,11 @@
 
  <!-- <center><%= link_to "Clear History", '/providers/clear_history', {:id => "clear-history", :style => 'color:#000'} %></center>  -->
 
-<center><button type="button" onclick="confirmation2()">Clear History</button></center>
+<div class = "button_vendor">
+
+<form class = "button_confirm" onclick="confirmation2()">Clear History</form>
+
+</div>
 
 
 <div class = "vendor_table">

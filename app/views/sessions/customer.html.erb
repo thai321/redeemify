@@ -20,14 +20,17 @@ $(document).ready(function(){
 
     <h1> <%= image_tag('logo.png', :size => '400x100', :class => 'logo' ) %></h1>
 </div>
-<center><%= link_to "Delete Account", '/sessions/delete_page', {:id => "delete-account", :style => 'color:#000'} %></center>
-
 <br>
+<div class="button_customer">
+<p class="button_delete"><%= link_to "Delete Account", '/sessions/delete_page', {:id => "delete-account", :style => 'color:#000'} %></p>
+</div>
+
+
 <div class = "customer_home_numcode">
 <p class="r1">Your Provider Code:  <%= @current_code %></p>
 <p class="r2">Total Offer Value: $<%= @total %></p>
 </div>
-<br>
+
 
 <% if flash[:alert] != nil %>
     <% flash.keys.each do |k| %> 

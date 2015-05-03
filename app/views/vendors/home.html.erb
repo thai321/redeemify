@@ -34,13 +34,13 @@
    <%= link_to "Update Your Profile", '/vendors/profile', {:id => "update-profile", :style => 'color:#000'} %>
 </div>
 
-<div class = "row1">
+
   <!--<%= link_to "Download And Remove Unclaimed Codes", '/vendors/remove_codes', {:id => "remove-unclaimed-codes" , :style => 'color:#000'} %> -->
-
- <button type="button" onclick="confirmation()"> Download And Remove Unclaimed Codes</button> 
-
+<div class = "button_confirm">
+ <form onclick="confirmation()" color = "#000" > Download And Remove Unclaimed Codes</form > 
 </div>
-</div>
+
+
 
 
 
@@ -49,9 +49,11 @@
 <h4 class="history">History</h4>
 
 <!-- <center><%= link_to "Clear History", '/vendors/clear_history', {:id => "clear-history", :style => 'color:#000'} %></center> -->
+<div class = "button_vendor">
 
-<center><button type="button" onclick="confirmation2()">Clear History</button></center>
+<form class = "button_confirm" onclick="confirmation2()">Clear History</form>
 
+</div>
 
 
 

@@ -10,8 +10,9 @@
 
 
 <h4 class="loginwith3">Update Your Profile</h4>  <%= form_tag update_profile_vendors_path, multipart: true do %>
+
     <div class = "home1">
- <p class="homee"><%= link_to "Home", '/vendors/home' %></p>
+ <p class="homee"><%= link_to image_tag('home2.png', :size =>'40x40'), '/vendors/home' %></p>
 </div>
 
 <% if flash[:error] != nil %>

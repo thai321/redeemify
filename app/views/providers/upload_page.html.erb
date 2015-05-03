@@ -1,11 +1,11 @@
-<p class="account">Account from: <%= @provider.provider.upcase  %> | <%= @provider.name %> | <%= link_to "Log out", logout_path, :id => "logout" %></p>
+<p class="account">Login with: <%= @provider.provider.upcase  %> | Name: <%= @provider.name %> | <%= link_to "Log out", logout_path, :id => "logout" %></p>
 <div id="welcome">
 
     <h1> <%= image_tag('logo.png', :size => '400x100', :class => 'logo' ) %></h1>
 </div>
 <h4 class="loginwith3">Upload New Codes</h4>
-<div class = "home1">
- <p class="homee"><%= link_to "Home", '/providers/home' %></p>
+ <div class = "home1">
+ <p class="homee"><%= link_to image_tag('home2.png', :size =>'40x40'), '/providers/home' %></p>
 </div>
 
   <% if flash[:error] != nil %>
