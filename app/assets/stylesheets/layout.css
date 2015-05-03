@@ -93,11 +93,11 @@ textarea:focus {
                 text-shadow:#fff 0 1px 0;color:#5e6469
 
 }
-.vendor_home_numcode p {text-align: left; font-size: 12px;color: #000000;}
-.vendor_home_numcode p{padding-top:0px}
-.vendor_home_numcode p.r2{padding-top:6px}
+.vendor_home_numcode a {text-align: left; font-size: 12px;color: #000000;}
+.vendor_home_numcode a{padding-top:6px}
+.vendor_home_numcode a.r2{padding-top:6px}
 
-.customer_home_numcode {background: #e5e5e5;  margin-left:  auto; margin-right:auto; width: 220px; height: 80px; border-radius: 10px; margin-top: 15px; 
+.customer_home_numcode {background: #e5e5e5;  margin-left:  auto; margin-right:auto; width: 220px; height: 40px; border-radius: 10px; margin-top: 15px; 
     border-radius: 6px 6px 6px 6px;
   border-style: none solid solid none;
   border-width: medium 1px 1px medium;
@@ -389,8 +389,7 @@ div.tooltip h3 {
 #amazon-auth {padding-left : 2px;}
 */
 .customer_notice {color:red; text-align: center; font-style: italic;}
-
-.vendor_table table {margin-top: 20px;border-collapse: collapse; margin-left: auto; margin-right: auto ;width: 90%;table-layout: fixed}
+.vendor_table table {margin-top: 20px;border-collapse: collapse; margin-left: auto; margin-right:auto ; width:90%; table-layout: fixed}
 .vendor_table table, th { border :none}
 .toggler {text-align: right;color:#e3d3e3;}
 .vendor_table table, tr, td {height:25px;white-space: pre-wrap;}
@@ -481,6 +480,8 @@ div.tooltip h3 {
 .button_confirm a:link{text-decoration: none}
 
 
+.warning {background: #ffcccc;margin:auto;}
+.deletepage {width:200px; margin:auto;}
 .oddd{background: #f0f0f0;}
 .evenn{background: #d7d7d7;} 
 /*#b2e4fa*/
@@ -491,7 +492,7 @@ div.tooltip h3 {
 .home1 {width : 45px; margin: auto;padding-top: 10px}
 .submit {width : 80px; margin-left: 300px}
 .homee { -webkit-border-radius:200px;-moz-border-radius:200px;border-radius:200px;display:inline-block;font-weight:bold;font-size:1.0em;font-family:Helvetica, Arial, sans-serif
-              ;line-height:12px;margin-right:3px;padding:2px 2px 2px;text-decoration:none;
+              ;line-height:12px;margin-right:3px;padding:8px 10px 10px;text-decoration:none;
               -webkit-font-smoothing:antialiased;background:#fff;background:-webkit-linear-gradient(-90deg, #fff, #e7e7e7);
               background:-moz-linear-gradient(-90deg, #fff, #e7e7e7);
               background:linear,-90deg,#fff,#e7e7e7;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#fff)', 

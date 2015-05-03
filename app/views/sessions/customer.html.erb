@@ -20,24 +20,26 @@ $(document).ready(function(){
 
     <h1> <%= image_tag('logo.png', :size => '400x100', :class => 'logo' ) %></h1>
 </div>
+
 <br>
-<div class="button_customer">
-<p class="button_delete"><%= link_to "Delete Account", '/sessions/delete_page', {:id => "delete-account", :style => 'color:#000'} %></p>
-</div>
+
+
 
 
 <div class = "customer_home_numcode">
-<p class="r1">Your Provider Code:  <%= @current_code %></p>
-<p class="r2">Total Offer Value: $<%= @total %></p>
+<a class="r1">Your Provider Code: </a>
+<a style = "color:#1fb5fc">   <%= @current_code %></a>
+<a class="r2">Total Offer Value: </a>
+<a style="color:#07fa0d"> $<%= @total %></a>
 </div>
-
-
+<br>
+<div class = "warning">
 <% if flash[:alert] != nil %>
     <% flash.keys.each do |k| %> 
-       <center><font color="red"><%= flash[k] %></font></center>
+       <center><font color="black"><%= flash[k] %></font></center>
     <% end %> 
-<br>
 <% end %>
+</div>
 
 
 <p class = "customer_notice"> Click on vendor's name to redeem your code! </p>
@@ -50,7 +52,7 @@ $(document).ready(function(){
   </div>
   </div>
 <% end %>
-<br>
+
  <% @list_codes.each do |vendor, code| %>
  <div class = "customer_table">
 
@@ -96,8 +98,11 @@ $(document).ready(function(){
 
 </div>
 <% end %>
+<h5 align="center"> Delete your account </h5>
+<div class="home1">
 
-
+<p class="homee"><%= link_to image_tag('delete_user-512.png', :style => '30x20'), '/sessions/delete_page', {:id => "delete-account", :style => 'color:#000'} %></p>
+</div>
 
 
 

@@ -1,6 +1,7 @@
-<h1>Session#Delete user account</h1>
+<div class = "deletepage">
+<h5>Are you sure ?</h1>
 
-<%= link_to "Yes", '/sessions/delete_account', {:id => "delete-confirm" , :style => 'color:#000'} %>
-<br>
-<br>
-<%= link_to "No", '/sessions/customer', {:id => "delete-reject" , :style => 'color:#000'} %>
+<div class="button_delete" ><%= link_to "Yes", '/sessions/delete_account', {:id => "delete-confirm" , :style => 'color:#000'} %> </div>
+
+<div class="button_delete" ><%= link_to "No", '/sessions/customer', {:id => "delete-reject" , :style => 'color:#000'} %></div>
+</div>
