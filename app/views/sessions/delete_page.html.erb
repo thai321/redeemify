@@ -1,7 +1,10 @@
 <div class = "deletepage">
-<h5>Are you sure ?</h1>
+<h4 style = "color:red"> Attention !!!</h4>
+<h5>If you delete your account, all of your informations will be removed from the app database.</h5>
+<h5>Moreover, you will no longer have access to your provider and vendor offer's codes</h5>
+<h5>Are you sure?</h5>
 
-<div class="button_delete" ><%= link_to "Yes", '/sessions/delete_account', {:id => "delete-confirm" , :style => 'color:#000'} %> </div>
+<div class="button_delete" ><%= link_to "Yes", '/sessions/delete_account', {:id => "delete-confirm" , :style => 'color:red'} %> </div>
 
-<div class="button_delete" ><%= link_to "No", '/sessions/customer', {:id => "delete-reject" , :style => 'color:#000'} %></div>
+<div class="button_delete" ><%= link_to "No", '/sessions/customer', {:id => "delete-reject" , :style => 'color:blue'} %></div>
 </div>

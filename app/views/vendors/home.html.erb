@@ -4,7 +4,26 @@
     <h1> <%= image_tag('logo.png', :size => '400x100', :class => 'logo' ) %></h1>
   </div>
 
+<% if flash[:error] != nil %>
+<div class = "warning">
+    <% flash.keys.each do |k| %> 
+       <center><font color="black"><%= flash[k] %></font></center>
+    <% end %> 
+</div>
+<br>
+<% end %>
 
+    
+
+
+<% if flash[:notice] != nil %>
+<div class = "notice">
+    <% flash.keys.each do |k| %> 
+       <center><font color="black"><%= flash[k] %></font></center>
+    <% end %> 
+</div>
+<br>
+<% end %>
 
 <center><div id="barchart_values" style="width: 900px; height: 150px;"></div></center>
 
@@ -14,12 +33,7 @@
 <br>
 
 
-<% if flash[:error] != nil %>
-    <% flash.keys.each do |k| %> 
-       <center><font color="red"><%= flash[k] %></font></center>
-    <% end %> 
-<br>
-<% end %>
+
 
 
 <div class = "group-buttons">

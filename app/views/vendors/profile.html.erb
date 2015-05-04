@@ -40,7 +40,7 @@
     <h3 class="upload_text">Offer's Description <span id='question4'>?</span></h3> 
     <textarea name="description" id = "description" cols="50" rows="4"  ><%= @vendor.description %></textarea>
 
-    <h3 class="upload_text">Instructions to redeem the code<span id='question5'>?</span></h3> 
+    <h3 class="upload_text">Instructions to redeem the code <span id='question5'>?</span></h3> 
     <textarea name="instruction" id="instruction" cols="50" rows="4" ><%= @vendor.instruction %></textarea>
 
     <br>
@@ -58,9 +58,9 @@
   <br>
 <div id='popup1'>Value for each coupon code, e.g 1.45 = $1.45</div>
 <div id='popup2'>The date your coupons are expired</div>
-<div id='popup3'>Explain 3 </div>
-<div id='popup4'>Explain 4</div>
-<div id='popup5'>Explain 5</div>
+<div id='popup3'>Offer's help link, e.g github.com/help</div>
+<div id='popup4'>e.g This offer grants the user 5 additional free private repositories for 2 years.</div>
+<div id='popup5'>To redeem the offer, visit github.com/awesomedeal to enter the promo code!</div>
    <script>
     $(document).ready(function() {
     $('#question').hover(function() {

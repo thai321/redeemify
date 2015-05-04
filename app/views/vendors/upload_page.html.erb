@@ -4,16 +4,34 @@
     <h1> <%= image_tag('logo.png', :size => '400x100', :class => 'logo' ) %></h1>
 </div>
 
+<% if flash[:error] != nil %>
+<div class = "warning">
+    <% flash.keys.each do |k| %> 
+       <center><font color="black"><%= flash[k] %></font></center>
+    <% end %> 
+</div>
+<br>
+<% end %>
+
+    
+
+
+<% if flash[:notice] != nil %>
+<div class = "notice">
+    <% flash.keys.each do |k| %> 
+       <center><font color="black"><%= flash[k] %></font></center>
+    <% end %> 
+</div>
+<br>
+<% end %>
+
+
  <h4 class="loginwith3">Upload New Codes</h4>
   <div class = "home1">
  <p class="homee"><%= link_to image_tag('home2.png', :size =>'40x40'), '/vendors/home' %></p>
 </div>
 
-<% if flash[:error] != nil %>
-    <% flash.keys.each do |k| %> 
-       <center><font color="red"><%= flash[k] %></font></center>
-    <% end %> 
-<% end %>
+
 
 
 <h3 class="upload_text">Attach .txt file </h3>  <%= form_tag import_vendors_path, multipart: true do %>
@@ -23,7 +41,7 @@
     <%= file_field_tag :file %> 
     </div>
     <h3 class="upload_text">Comment: <span id='question'>?</span></h3> 
-    <div id='popup6'>Explain 6</div>
+    <div id='popup6'>Comment for the upload. e.g: This is new 238 codes from github for this uploaded codes </div>
 
     <textarea name="comment" id="comments" cols="50" rows="4" placeholder="Comment..."></textarea>
 

@@ -64,9 +64,9 @@ $(document).ready(function(){
         <table class = "vendor_header">
         <tr>
           
-        <td class="vendor_name"><%= link_to vendor, @website[vendor],  {:style => 'color:#FFFFFF', :target => '_blank'} %> </td>
-        <td class="vendor_code"><%= code %></td>
-        <td class="vendor_value">$<%= @cashValue[vendor] %></td>
+        <td class="vendor_name"><%= link_to vendor, @website[vendor],  {:style => 'color:#fd7330', :target => '_blank'} %> </td>
+        <td class="vendor_code" style ="color:#1fb5fc"><%= code %></td>
+        <td class="vendor_value" >$<%= @cashValue[vendor] %></td>
         <td class="vendor_expiration"><%= @expiration[vendor] %></td>
 
         <td class="show_hide"><a href="#" class="toggler" data-prod-cat="<%= cycle('1','2','3','4','5','6','7','8','9','10') -%>" style="color:#8e8e8e">Show/Hide</a></td>
