@@ -1,6 +1,6 @@
 
 
-<p class="account">Login with: <%= @provider.provider.upcase  %> | Name: <%= @provider.name %> | <%= link_to "Log out", logout_path, :id => "logout" %></p>
+<p class="account"><%= t 'provider.login' %><%= @provider.provider.upcase  %> | <%= t 'provider.name' %> <%= @provider.name %> | <%= link_to "Log out", logout_path, :id => "logout" %></p>
 <div id="welcome">
 
     <h1> <%= image_tag('logo.png', :size => '400x100', :class => 'logo' ) %></h1>
@@ -50,7 +50,7 @@
 
 <br>
    
-<h4 class="history">History</h4>
+<h4 class="history"><%= t 'provider.history' %></h4>
 
  <!-- <center><%= link_to "Clear History", '/providers/clear_history', {:id => "clear-history", :style => 'color:#000'} %></center>  -->
 
@@ -66,9 +66,9 @@
 <table>
 
     <tr class = "vendor_header">
-      <td width = "25%">Upload/Remove Date</td>
-      <td width = "50%">Comment</td>
-      <td width = "25%">Number of Codes Uploaded/Removed</td>
+      <td width = "25%"><%= t 'provider.col1' %></td>
+      <td width = "50%"><%= t 'provider.col2' %></td>
+      <td width = "25%"><%= t 'provider.col3' %></td>
     </tr>
   
 <tbody>

@@ -15,7 +15,7 @@ gem 'gchartrb'
 
 gem "therubyracer"
 gem "less-rails"
-
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-3-x' # For 3.x
 gem 'rails3-generators'
 group :development, :test do
   gem 'sqlite3'
