@@ -1,0 +1,27 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+TWITTER_KEY: 4bUmNUQl5SgJuuuWcWuzIULkS
+TWITTER_SECRET: CvFiQWRNvAO7JXWFFDyiNsLVvPbUhyGUOmsBSMUsmGw2CDtJYQ
+
+GOOGLE_KEY: 850083876126-h3r2ujqiu1e6enifhjeb5uo2uidhguer.apps.googleusercontent.com
+GOOGLE_SECRET: 8ixrZnsfH8NFCpLHEFqktmrM
+
+FACEBOOK_KEY: 289615254495412
+FACEBOOK_SECRET: 94cdb6552e5e5e19236fbd7d6b0c521e
+
+GITHUB_KEY: d96e7456c937578c846c
+GITHUB_SECRET: 5487bfe9b27116a7b351421cb355202b30d3c17f
+
+
+AMAZON_KEY: amzn1.application-oa2-client.6369331ae5954f8cb33edddc537da147
+AMAZON_SECRET: a1a09475af7f444ba1c37f2679692802c289563020ca894efed575949afe598f
