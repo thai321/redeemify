@@ -6,6 +6,7 @@ en:
   customer:
     login: "Logged via account: "
     name: "Name: "
+    loginInstruction: "Instruction 1:\nInstruction 2:\nInstruction 3:\n"
     yourcode: "Your Provider Code: "
     offervalue: "Total Offer Value: "
     instruction: "Click on vendor's name to redeem your code!"
